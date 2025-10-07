@@ -1,0 +1,77 @@
+
+
+.project-ctnr {
+    display: flex;
+    justify-content: space-between;
+    background: #11111a;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 1rem;
+}
+
+.project-ctnr:hover {
+    box-shadow: 0.2em 0.2em 0.5em rgb(87, 87, 87);
+}
+
+.presentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-description {
+    max-width: 33rem;
+}
+
+.site-web {
+display: flex;
+}
+
+.technos-ctnr {
+    display: flex;
+    list-style: none;
+    justify-content: start;
+    padding: 0;
+}
+
+.technos-ctnr li {
+    margin-right: 1rem;
+    /* background: rgb(176, 176, 176); */
+    background: #E93D82;
+    border-radius: 0.3rem;
+    /* color: black; */
+    color: white;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.screenshot {
+    height: 10rem;
+    width: 17rem;
+    border-radius: 1rem;
+    margin: 0 1rem;
+    /* object-fit: cover; */
+}
+
+.links-ctnr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    margin: 0 1rem;
+}
+
+.link {
+    background: rgb(176, 176, 176);
+    padding: 0.5rem 1rem;
+    border-radius: 0.7rem;
+    margin: 0.5rem 0;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.link a {
+    text-decoration: none;
+    color: black;
+}
