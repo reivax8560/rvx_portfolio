@@ -1,6 +1,4 @@
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
 import { faReact, faSass, faSquareJs, faNotion, faGithub } from "@fortawesome/free-brands-svg-icons";
 import redux from './assets/redux.svg'
 import figma from './assets/Figma.png'
@@ -11,76 +9,80 @@ import lesPetitsPlats_img from "./assets/Les_Petits_Plats_mini.png"
 import kasa_img from "./assets/Kasa_mini.png"
 import sportsee_img from "./assets/Sportsee_mini.png"
 import argentBank_img from "./assets/Argent_Bank_mini.png"
+import { useContext } from "react";
+import {ThemeContext} from './context/ThemeContext'
 
 
 function App() {
 
+  const {theme, toggleTheme} = useContext(ThemeContext)
+
   return (
 
-    <div className='body'>
+    <div className={`body ${theme}`}>
 
       <header>
-        <div>
-        <FontAwesomeIcon icon={faSun} />
-        <FontAwesomeIcon icon={faMoon} />
-        </div>
+        <button className={`theme-button ${theme}`} onClick={toggleTheme}>
+          {theme === "light" ? 'Mode  🌙' : 'Mode  ☀️'}
+        </button>
       </header>
 {/* ///////////////////////////////////////////// PRESENTATION //////////////////////////////////////////// */}
       <section className='hero-section'> 
 
-        <h1>XAVIER MARTIN</h1>
+        <h1 className={`main-title ${theme}`}>XAVIER MARTIN</h1>
 
         <p className='job'>DÉVELOPPEUR FRONTEND</p>
 
-        <p className='description'>
-          Bonjour, je suis un tout nouveau développeur, fraichement sorti de formation en 2025. <br />
-          Je travaille actuellement comme administrateur fonctionnel SIRH pour les sapeurs-pompiers. <br />
+        <p className='presentation'>
+          Bonjour, je suis développeur frontend, formé sur React JS. <br />
+          J'ai obtenu mon diplôme en 2025. <br />
+          Depuis 9 ans je travaille comme administrateur fonctionnel SIRH pour les sapeurs-pompiers. <br />
           Je souhaite maintenant rejoindre la filière développeur dès que possible sur la région bordelaise. <br />
           A très bientôt !
         </p>
 
-        <p className='contact'>Me contacter : <a href="mailto:xavier.martin.rec@gmail.com">xavier.martin.rec@gmail.com</a> </p>
+        <p className='contact'>Me contacter : <a className={`mail ${theme}`} href="mailto:xavier.martin.rec@gmail.com">xavier.martin.rec@gmail.com</a> </p>
 
       </section>
 {/* ///////////////////////////////////////////// COMPETENCES //////////////////////////////////////////// */}
 
-      <section className='skills-section'>
+      <section className={`skills-section ${theme}`}>
 
         <h2>Technologies employées</h2>
 
         <div className="skills-ctnr">
 
-          <div className="skill-card">
+          <div className={`skill-card ${theme}`}>
             <FontAwesomeIcon icon={faSquareJs} style={{color: "#FFD43B",}} className="skill-icon"/>
             <p className="skill-label">Javascript</p>
           </div>
 
-          <div className="skill-card">
+          <div className={`skill-card ${theme}`}>
             <FontAwesomeIcon icon={faReact} style={{color: "#63E6BE",}} className="skill-icon"/>
             <p className="skill-label">ReactJS</p>
           </div>
 
-          <div className="skill-card">
+          <div className={`skill-card ${theme}`}>
             <img src={redux} alt="Redux logo" style={{background: "#FFF", borderRadius: "50%"}} className="skill-img"/>
             <p className="skill-label">Redux</p>
           </div>
 
-          <div className="skill-card">
+          <div className={`skill-card ${theme}`}>
             <FontAwesomeIcon icon={faSass} style={{color: "#CF649A",}} className="skill-icon"/>
             <p className="skill-label">Sass</p>
           </div>
           
-          <div className="skill-card">
+          <div className={`skill-card ${theme}`}>
             <FontAwesomeIcon icon={faGithub} className="skill-icon"/>
             <p className="skill-label">Github</p>
           </div>
 
-          <div className="skill-card">
+          <div className={`skill-card ${theme}`}>
             <img src={figma} alt="Figma logo" style={{background: "#FFF", borderRadius: "50%"}} className="skill-img"/>
             <p className="skill-label">Figma</p>
           </div>
 
-          <div className="skill-card">
+          <div className={`skill-card ${theme}`}>
             <FontAwesomeIcon icon={faNotion} className="skill-icon"/>
             <p className="skill-label">Notion</p>
           </div>
@@ -90,7 +92,7 @@ function App() {
       </section>
 {/* ///////////////////////////////////////////// PROJETS //////////////////////////////////////////// */}
 
-      <section className='projects-section'>
+      <section className={`projects-section ${theme}`}>
 
         <h2>Mes projets de formation</h2>
 
@@ -142,8 +144,6 @@ function App() {
       </section>
 
 
-
-      <footer></footer>
 
 
 

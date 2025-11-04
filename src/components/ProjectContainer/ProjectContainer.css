@@ -3,55 +3,67 @@
 .project-ctnr {
     display: flex;
     justify-content: space-between;
-    background: #11111a;
     padding: 1rem;
     margin: 1rem 0;
     border-radius: 1rem;
+    /* box-sizing: border-box; */
+}
+
+.project-ctnr.light {
+    background: #f2e9f0;
+    box-shadow: 0.2em 0.2em 0.5em rgb(87, 87, 87);
+}
+
+.project-ctnr.dark {
+    background: #11111a;
 }
 
 .project-ctnr:hover {
     box-shadow: 0.2em 0.2em 0.5em rgb(87, 87, 87);
 }
 
-.presentation {
+.description-ctnr {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 45%;
 }
 
 .project-description {
     max-width: 33rem;
 }
 
-.site-web {
-display: flex;
-}
-
-.technos-ctnr {
+.tools-ctnr {
     display: flex;
-    list-style: none;
     justify-content: start;
+    flex-wrap: wrap;
+    list-style: none;
     padding: 0;
 }
 
-.technos-ctnr li {
-    margin-right: 1rem;
-    /* background: rgb(176, 176, 176); */
+.tools-item {
+    margin: 0 1rem 0.5rem 0;
     background: #E93D82;
     border-radius: 0.3rem;
-    /* color: black; */
     color: white;
     padding: 0.2rem 0.5rem;
-    font-size: 0.8rem;
+    font-size: clamp(9px, .8vw, 12px);
     font-weight: bold;
 }
 
+.details-ctnr {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    /* flex-wrap: wrap; */
+}
+
 .screenshot {
-    height: 10rem;
-    width: 17rem;
+    /* width: 20vw; */
+    width: clamp(200px, 23vw, 250px);
+    /* width: 45%; */
     border-radius: 1rem;
     margin: 0 1rem;
-    /* object-fit: cover; */
 }
 
 .links-ctnr {
@@ -60,18 +72,71 @@ display: flex;
     justify-content: center;
     padding: 0;
     margin: 0 1rem;
+    /* max-width: 100px; */
 }
 
 .link {
     background: rgb(176, 176, 176);
-    padding: 0.5rem 1rem;
     border-radius: 0.7rem;
     margin: 0.5rem 0;
     font-weight: 600;
-    font-size: 0.8rem;
-}
-
-.link a {
+    /* font-size: 0.7rem; */
+    font-size: clamp(10px, 1vw, 12px);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
     text-decoration: none;
     color: black;
+    padding: 0.5rem 1rem;
+}
+
+.link-icon {
+    margin-right: 0.5rem;
+}
+
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+@media screen and (max-width: 768px) {
+    .body {
+        padding: 0 5%;
+    }
+    h1 {
+        justify-self: center;
+    }
+    h2 {
+        align-self: center;
+    }
+    .job {
+        justify-self: center;
+    }
+    .presentation {
+    width: 100%;
+    }
+    .skills-ctnr {
+    justify-content: space-between;
+    }
+    .project-ctnr {
+        flex-direction: column;
+    }
+    .description-ctnr {
+        width: 100%;
+        align-items: center;
+    }
+    .details-ctnr {
+        flex-direction: column;
+        align-items: center;
+    }
+    .screenshot {
+        width: 100%;
+        max-width: 250px;
+        border-radius: .5rem;
+    }
+    .links-ctnr {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .link {
+        margin: 1rem 0.5rem;
+    }
 }
