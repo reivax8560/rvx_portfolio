@@ -10,7 +10,7 @@
 }
 
 .project-ctnr.light {
-    background: #f2e9f0;
+    background: #faf2f8;
     box-shadow: 0.2em 0.2em 0.5em rgb(87, 87, 87);
 }
 
@@ -62,7 +62,7 @@
     /* width: 20vw; */
     width: clamp(200px, 23vw, 250px);
     /* width: 45%; */
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     margin: 0 1rem;
 }
 
@@ -76,7 +76,7 @@
 }
 
 .link {
-    background: rgb(176, 176, 176);
+    background: rgb(214, 213, 213);
     border-radius: 0.7rem;
     margin: 0.5rem 0;
     font-weight: 600;

@@ -23,7 +23,7 @@ function App() {
 
       <header>
         <button className={`theme-button ${theme}`} onClick={toggleTheme}>
-          {theme === "light" ? 'Mode  🌙' : 'Mode  ☀️'}
+          {theme === "light" ? '🌙' : '☀️'}
         </button>
       </header>
 {/* ///////////////////////////////////////////// PRESENTATION //////////////////////////////////////////// */}
