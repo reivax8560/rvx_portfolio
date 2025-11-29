@@ -9,7 +9,7 @@ import lesPetitsPlats_img from "./assets/Les_Petits_Plats_mini.png"
 import kasa_img from "./assets/Kasa_mini.png"
 import sportsee_img from "./assets/Sportsee_mini.png"
 import argentBank_img from "./assets/Argent_Bank_mini.png"
-import notesHandler_img from './assets/notesHandler_png'
+import notesHandler_img from './assets/notesHandler.png'
 import { useContext } from "react";
 import {ThemeContext} from './context/ThemeContext'
 
@@ -142,6 +142,10 @@ function App() {
           frontEndLink="https://github.com/reivax8560/Projet_13_OC_frontend"
         />
 
+      </section>
+
+      <section className={`projects-section ${theme}`}>
+
         <h2>Mes projets post formation</h2>
 
         <ProjectContainer 
@@ -152,35 +156,7 @@ function App() {
           websiteLink="https://notes-handler.vercel.app/"
           frontEndLink="https://github.com/reivax8560/notes_handler"
         />
-
       </section>
-
-
-
-
-
-
-      {/* <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p> */}
-
 
 
     </div>
