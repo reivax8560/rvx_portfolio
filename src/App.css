@@ -1,4 +1,10 @@
-.body {
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+
+.app {
   padding: 0 20%;
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
@@ -7,12 +13,12 @@
   box-sizing: border-box;
 }
 
-.body.dark {
+.app.dark {
   background: #0b0b10;
   color: #b0b0b0;
 }
 
-.body.light {
+.app.light {
   background: #fcf3fa;
   color: #0b0b10;
 }
@@ -85,7 +91,7 @@ p {
 }
 
 .contact {
-  margin: 2rem 0;
+  margin: 4rem 0 2rem 0;
 }
 
 .mail.dark {
@@ -169,7 +175,7 @@ p {
 } */
 
 @media screen and (max-width: 768px) {
-  .body {
+  .app {
     padding: 0 3rem;
   }
   .hero-section {

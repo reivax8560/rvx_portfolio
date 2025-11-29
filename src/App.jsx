@@ -19,7 +19,7 @@ function App() {
 
   return (
 
-    <div className={`body ${theme}`}>
+    <div className={`app ${theme}`}>
 
       <header>
         <button className={`theme-button ${theme}`} onClick={toggleTheme}>
@@ -31,14 +31,14 @@ function App() {
 
         <h1 className={`main-title ${theme}`}>XAVIER MARTIN</h1>
 
-        <p className='job'>DÉVELOPPEUR FRONTEND</p>
+        <p className='job'>DÉVELOPPEUR REACT.JS</p>
 
         <p className='presentation'>
-          Bonjour, je suis développeur frontend, formé sur React JS. <br />
-          J'ai obtenu mon diplôme en 2025. <br />
-          Depuis 9 ans je travaille comme administrateur fonctionnel SIRH pour les sapeurs-pompiers. <br />
-          Je souhaite maintenant rejoindre la filière développeur dès que possible sur la région bordelaise. <br />
-          A très bientôt !
+          Bonjour et bienvenue ! <br /><br />
+          Je suis développeur concepteur logiciel spécialisé en React JS, diplômé en 2025. <br />
+          Après 9 années passées comme administrateur fonctionnel SIRH au sein des sapeurs-pompiers, j’ai décidé de me lancer pleinement dans le développement web. <br /><br />
+          Je suis aujourd’hui à la recherche d’une opportunité dans la région bordelaise pour rejoindre une équipe, apprendre, contribuer et continuer à évoluer en tant que développeur. <br /><br />
+          Au plaisir d’échanger !
         </p>
 
         <p className='contact'>Me contacter : <a className={`mail ${theme}`} href="mailto:xavier.martin.rec@gmail.com">xavier.martin.rec@gmail.com</a> </p>
