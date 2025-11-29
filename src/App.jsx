@@ -9,6 +9,7 @@ import lesPetitsPlats_img from "./assets/Les_Petits_Plats_mini.png"
 import kasa_img from "./assets/Kasa_mini.png"
 import sportsee_img from "./assets/Sportsee_mini.png"
 import argentBank_img from "./assets/Argent_Bank_mini.png"
+import notesHandler_img from './assets/notesHandler_png'
 import { useContext } from "react";
 import {ThemeContext} from './context/ThemeContext'
 
@@ -97,48 +98,59 @@ function App() {
         <h2>Mes projets de formation</h2>
 
         <ProjectContainer 
-        title="Fish Eye"
-        description="Créez un site accessible pour une plateforme de photographes"
-        technos={["HTML", "CSS", "JS"]}
-        screenshot={fisheye_img}
-        websiteLink="https://reivax8560.github.io/Projet_6_OC/"
-        frontEndLink="https://github.com/reivax8560/Projet_6_OC"
+          title="Fish Eye"
+          description="Créez un site accessible pour une plateforme de photographes"
+          technos={["HTML", "CSS", "JS"]}
+          screenshot={fisheye_img}
+          websiteLink="https://reivax8560.github.io/Projet_6_OC/"
+          frontEndLink="https://github.com/reivax8560/Projet_6_OC"
         />
 
         <ProjectContainer 
-        title="Les petits plats"
-        description="Implémentez un algorithme de recherche de recettes de cuisines"
-        technos={["HTML", "CSS", "JS", "BOOTSTRAP"]}
-        screenshot={lesPetitsPlats_img}
-        websiteLink="https://reivax8560.github.io/Projet_7_OC/"
-        frontEndLink="https://github.com/reivax8560/Projet_7_OC"
+          title="Les petits plats"
+          description="Implémentez un algorithme de recherche de recettes de cuisines"
+          technos={["HTML", "CSS", "JS", "BOOTSTRAP"]}
+          screenshot={lesPetitsPlats_img}
+          websiteLink="https://reivax8560.github.io/Projet_7_OC/"
+          frontEndLink="https://github.com/reivax8560/Projet_7_OC"
         />
 
         <ProjectContainer 
-        title="Kasa"
-        description="Implémentez le front end d'une application de location de logements"
-        technos={["HTML", "SASS", "REACT"]}
-        screenshot={kasa_img}
-        websiteLink="https://projet11ockasa.vercel.app/"
-        frontEndLink="https://github.com/reivax8560/Projet_11_OC"
+          title="Kasa"
+          description="Implémentez le front end d'une application de location de logements"
+          technos={["HTML", "SASS", "REACT"]}
+          screenshot={kasa_img}
+          websiteLink="https://projet11ockasa.vercel.app/"
+          frontEndLink="https://github.com/reivax8560/Projet_11_OC"
         />
 
         <ProjectContainer 
-        title="Sportsee"
-        description="Développez un tableau de bord d'analytics avec React pour un site de sport"
-        technos={["HTML", "CSS", "REACT", "RECHARTS", "API"]}
-        screenshot={sportsee_img}
-        backEndLink="https://github.com/reivax8560/P12-back-end"
-        frontEndLink="https://github.com/reivax8560/Projet_12_OC"
+          title="Sportsee"
+          description="Développez un tableau de bord d'analytics avec React pour un site de sport"
+          technos={["HTML", "CSS", "REACT", "RECHARTS", "API"]}
+          screenshot={sportsee_img}
+          backEndLink="https://github.com/reivax8560/P12-back-end"
+          frontEndLink="https://github.com/reivax8560/Projet_12_OC"
         />
 
         <ProjectContainer 
-        title="Argent Bank"
-        description="Utilisez une API pour une application bancaire"
-        technos={["HTML", "CSS", "REACT", "REDUX", "API"]}
-        screenshot={argentBank_img}
-        backEndLink="https://github.com/reivax8560/Projet_13_OC_argent_bank"
-        frontEndLink="https://github.com/reivax8560/Projet_13_OC_frontend"
+          title="Argent Bank"
+          description="Utilisez une API pour une application bancaire"
+          technos={["HTML", "CSS", "REACT", "REDUX", "API"]}
+          screenshot={argentBank_img}
+          backEndLink="https://github.com/reivax8560/Projet_13_OC_argent_bank"
+          frontEndLink="https://github.com/reivax8560/Projet_13_OC_frontend"
+        />
+
+        <h2>Mes projets post formation</h2>
+
+        <ProjectContainer 
+          title="Gestionnaire de notes"
+          description="Gestionnaire de notes avec intégration Markdown"
+          technos={["HTML", "CSS", "REACT", "react-markdown", "context API",]}
+          screenshot={notesHandler_img}
+          websiteLink="https://notes-handler.vercel.app/"
+          frontEndLink="https://github.com/reivax8560/notes_handler"
         />
 
       </section>
