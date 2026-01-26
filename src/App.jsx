@@ -10,6 +10,7 @@ import kasa_img from "./assets/Kasa_mini.png"
 import sportsee_img from "./assets/Sportsee_mini.png"
 import argentBank_img from "./assets/Argent_Bank_mini.png"
 import notesHandler_img from './assets/notesHandler.png'
+import HR_Dashboard_img from './assets/HR_Dashboard_min.png'
 import { useContext } from "react";
 import {ThemeContext} from './context/ThemeContext'
 
@@ -155,6 +156,15 @@ function App() {
           screenshot={notesHandler_img}
           websiteLink="https://notes-handler.vercel.app/"
           frontEndLink="https://github.com/reivax8560/notes_handler"
+        />
+
+        <ProjectContainer 
+          title="Tableau de bord RH"
+          description="Application RH avec graphiques"
+          technos={["HTML", "CSS", "REACT", "REDUX", "RECHARTS"]}
+          screenshot={HR_Dashboard_img}
+          websiteLink="https://hr-dashboard-virid.vercel.app/"
+          frontEndLink="https://github.com/reivax8560/HR_Dashboard"
         />
       </section>
 
