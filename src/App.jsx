@@ -94,6 +94,30 @@ function App() {
       </section>
 {/* ///////////////////////////////////////////// PROJETS //////////////////////////////////////////// */}
 
+        <section className={`projects-section ${theme}`}>
+
+        <h2>Mes projets post formation</h2>
+
+        <ProjectContainer 
+          title="Gestionnaire de notes"
+          description="Gestionnaire de notes avec intégration Markdown"
+          technos={["HTML", "CSS", "REACT", "react-markdown", "context API",]}
+          screenshot={notesHandler_img}
+          websiteLink="https://notes-handler.vercel.app/"
+          frontEndLink="https://github.com/reivax8560/notes_handler"
+        />
+
+        <ProjectContainer 
+          title="Tableau de bord RH"
+          description="Application RH avec graphiques"
+          technos={["HTML", "CSS", "REACT", "REDUX", "RECHARTS"]}
+          screenshot={HR_Dashboard_img}
+          websiteLink="https://hr-dashboard-virid.vercel.app/"
+          frontEndLink="https://github.com/reivax8560/HR_Dashboard"
+        />
+      </section>
+
+
       <section className={`projects-section ${theme}`}>
 
         <h2>Mes projets de formation</h2>
@@ -144,30 +168,6 @@ function App() {
         />
 
       </section>
-
-      <section className={`projects-section ${theme}`}>
-
-        <h2>Mes projets post formation</h2>
-
-        <ProjectContainer 
-          title="Gestionnaire de notes"
-          description="Gestionnaire de notes avec intégration Markdown"
-          technos={["HTML", "CSS", "REACT", "react-markdown", "context API",]}
-          screenshot={notesHandler_img}
-          websiteLink="https://notes-handler.vercel.app/"
-          frontEndLink="https://github.com/reivax8560/notes_handler"
-        />
-
-        <ProjectContainer 
-          title="Tableau de bord RH"
-          description="Application RH avec graphiques"
-          technos={["HTML", "CSS", "REACT", "REDUX", "RECHARTS"]}
-          screenshot={HR_Dashboard_img}
-          websiteLink="https://hr-dashboard-virid.vercel.app/"
-          frontEndLink="https://github.com/reivax8560/HR_Dashboard"
-        />
-      </section>
-
 
     </div>
   )
