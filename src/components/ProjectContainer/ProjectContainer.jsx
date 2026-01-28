@@ -51,35 +51,6 @@ export default function ProjectContainer({title, description, technos, screensho
                     }
                 
                 </div>
-
-                {/* <div className="links-ctnr">
-                    
-                    {websiteLink &&
-                    <p className="link">
-                        <a href={websiteLink}>
-                            <FontAwesomeIcon className="link-icon" icon={faLink} />
-                            Voir le site
-                        </a>
-                    </p>
-                    }
-
-                    <p className="link">
-                        <a href={frontEndLink}>
-                            <FontAwesomeIcon className="link-icon" icon={faLink} />
-                            Voir le frontend
-                        </a>
-                    </p>
-
-                    {backEndLink &&
-                    <p className="link">
-                        <a href={backEndLink}>
-                            <FontAwesomeIcon className="link-icon" icon={faLink} />
-                            Voir le backend
-                        </a>
-                    </p>
-                    }
-                
-                </div> */}
                 
             </div>
 
