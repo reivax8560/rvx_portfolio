@@ -4,7 +4,7 @@ import { faLink } from "@fortawesome/free-solid-svg-icons";
 import { useContext } from "react";
 import {ThemeContext} from '../../context/ThemeContext'
 
-export default function ProjectContainer({title, description, technos, screenshot, websiteLink, backEndLink, frontEndLink}) {
+export default function ProjectContainer({title, responsive, description, technos, screenshot, websiteLink, backEndLink, frontEndLink}) {
 
     const {theme} = useContext(ThemeContext)
 
@@ -14,6 +14,7 @@ export default function ProjectContainer({title, description, technos, screensho
 
             <div className="description-ctnr">
                 <h3 className="project-title">{title}</h3>
+                <p className="project-responsive">{`portabilité : ${responsive}`}</p>
                 <p className="project-description">{description}</p>
                 <ul className="tools-ctnr">
                     {technos.map((el, index) =>

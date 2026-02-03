@@ -33,6 +33,11 @@
     max-width: 33rem;
 }
 
+.project-responsive {
+    margin-bottom: 1rem;
+    align-self: self-start;
+}
+
 .tools-ctnr {
     display: flex;
     justify-content: start;

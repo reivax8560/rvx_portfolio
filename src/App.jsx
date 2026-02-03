@@ -99,7 +99,18 @@ function App() {
         <h2>Mes projets post formation</h2>
 
         <ProjectContainer 
-          title="Gestionnaire de notes"
+          title="Tableau de bord RH (en cours...)"
+          responsive="responsive"
+          description="Application RH avec graphiques"
+          technos={["HTML", "CSS", "REACT", "REDUX", "RECHARTS"]}
+          screenshot={HR_Dashboard_img}
+          websiteLink="https://hr-dashboard-virid.vercel.app/"
+          frontEndLink="https://github.com/reivax8560/HR_Dashboard"
+        />
+
+        <ProjectContainer
+          title="Gestionnaire de notes (en cours...)"
+          responsive="desktop only"
           description="Gestionnaire de notes avec intégration Markdown"
           technos={["HTML", "CSS", "REACT", "react-markdown", "context API",]}
           screenshot={notesHandler_img}
@@ -107,14 +118,6 @@ function App() {
           frontEndLink="https://github.com/reivax8560/notes_handler"
         />
 
-        <ProjectContainer 
-          title="Tableau de bord RH"
-          description="Application RH avec graphiques"
-          technos={["HTML", "CSS", "REACT", "REDUX", "RECHARTS"]}
-          screenshot={HR_Dashboard_img}
-          websiteLink="https://hr-dashboard-virid.vercel.app/"
-          frontEndLink="https://github.com/reivax8560/HR_Dashboard"
-        />
       </section>
 
 
@@ -124,6 +127,7 @@ function App() {
 
         <ProjectContainer 
           title="Fish Eye"
+          responsive="desktop only"
           description="Créez un site accessible pour une plateforme de photographes"
           technos={["HTML", "CSS", "JS"]}
           screenshot={fisheye_img}
@@ -133,6 +137,7 @@ function App() {
 
         <ProjectContainer 
           title="Les petits plats"
+          responsive="desktop only"
           description="Implémentez un algorithme de recherche de recettes de cuisines"
           technos={["HTML", "CSS", "JS", "BOOTSTRAP"]}
           screenshot={lesPetitsPlats_img}
@@ -142,6 +147,7 @@ function App() {
 
         <ProjectContainer 
           title="Kasa"
+          responsive="responsive"
           description="Implémentez le front end d'une application de location de logements"
           technos={["HTML", "SASS", "REACT"]}
           screenshot={kasa_img}
@@ -151,6 +157,7 @@ function App() {
 
         <ProjectContainer 
           title="Sportsee"
+          responsive="desktop only"
           description="Développez un tableau de bord d'analytics avec React pour un site de sport"
           technos={["HTML", "CSS", "REACT", "RECHARTS", "API"]}
           screenshot={sportsee_img}
@@ -160,6 +167,7 @@ function App() {
 
         <ProjectContainer 
           title="Argent Bank"
+          responsive="desktop only"
           description="Utilisez une API pour une application bancaire"
           technos={["HTML", "CSS", "REACT", "REDUX", "API"]}
           screenshot={argentBank_img}
