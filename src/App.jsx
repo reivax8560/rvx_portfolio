@@ -101,14 +101,14 @@ function App() {
         <ProjectContainer 
           title="Tableau de bord RH (en cours...)"
           responsive="responsive"
-          description="Application RH avec graphiques"
-          technos={["HTML", "CSS", "REACT", "REDUX", "RECHARTS"]}
+          description="Application RH avec graphiques et indicateurs clés"
+          technos={["REACT", "REDUX", "RECHARTS","Vitest/TL"]}
           screenshot={HR_Dashboard_img}
           websiteLink="https://hr-dashboard-virid.vercel.app/"
-          frontEndLink="https://github.com/reivax8560/HR_Dashboard"
+          frontEndLink="https://github.com/reivax8560/HR_Dashboard/blob/main/README.md"
         />
 
-        <ProjectContainer
+        {/* <ProjectContainer
           title="Gestionnaire de notes (en cours...)"
           responsive="desktop only"
           description="Gestionnaire de notes avec intégration Markdown"
@@ -116,7 +116,7 @@ function App() {
           screenshot={notesHandler_img}
           websiteLink="https://notes-handler.vercel.app/"
           frontEndLink="https://github.com/reivax8560/notes_handler"
-        />
+        /> */}
 
       </section>
 
